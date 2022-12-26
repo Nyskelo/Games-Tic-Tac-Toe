@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <title>JS Modules</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+  </head>
+  <body>
+    <h1>Tic Tac Toe </h1>
+    <div class="scoreboard">
+      <div class="player">
+        <div class="name">
+          <label for="playerX" data-text="X's player">X's player</label>
+          <input
+            id="playerX"
+            class="#"
+            data-player="X"
+            type="text"
+            placeholder="your name is..."
+          >
+        </div>
+        <h2 id="scorePlayerX">0</h2>
+      </div>
+      <div>
+        <p>vs</p>
+        <button id="start">Start!</button>
+      </div>
+      <div class="player">
+        <div class="name">
+          <label for="playerO" data-text="O's player">O's player</label>
+          <input
+            id="playerO"
+            class="#"
+            data-player="O"
+            type="text"
+            placeholder="your name is..."
+          >
+        </div>
+        <h2 id="scorePlayerO">0</h2>
+      </div>
+    </div>
+    <table id="table">
+      <tr>
+        <td data-cell="0"></td>
+        <td data-cell="1"></td>
+        <td data-cell="2"></td>
+      </tr>
+      <tr>
+        <td data-cell="3"></td>
+        <td data-cell="4"></td>
+        <td data-cell="5"></td>
+      </tr>
+      <tr>
+        <td data-cell="6"></td>
+        <td data-cell="7"></td>
+        <td data-cell="8"></td>
+      </tr>
+    </table>
+    <div class="update">
+      <button id="newGame">New Game!</button>
+      <button id="reset">Reset</button>
+    </div>
+  </body>
+</html>

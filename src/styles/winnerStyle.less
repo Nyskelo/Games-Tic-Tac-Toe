@@ -1,0 +1,29 @@
+@color: red;
+
+.crossed(@direction:to bottom right) {
+  background-image: linear-gradient(
+    @direction,
+    transparent calc(50% - 1px),
+    @color,
+    transparent calc(50% + 1px)
+  );
+}
+.crossedRight {
+  .crossed;
+}
+.crossedLeft {
+  .crossed(to bottom left);
+}
+.crossedVertical {
+  .crossed(90deg);
+}
+.crossedHorizontal {
+  background: repeating-linear-gradient(@color 0%, @color 100%);
+  background-size: 100% 1px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.select {
+  color: rgb(21, 0, 255);
+  font-weight: bold;
+}

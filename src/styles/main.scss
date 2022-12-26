@@ -1,0 +1,70 @@
+#reset,
+#newGame,
+table {
+  pointer-events: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: pink;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 4rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  & td:not(td:last-child) {
+    border-right: 2px solid black;
+  }
+  & tr:not(tr:last-child) {
+    border-bottom: 2px solid black;
+  }
+  & td {
+    width: 100px;
+    height: 100px;
+    font-family: monospace;
+    cursor: pointer;
+  }
+}
+.scoreboard {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  gap: 10px;
+  & .player {
+    & .name {
+      display: inline-flex;
+      flex-direction: column;
+      line-height: 20px;
+      gap: 5px;
+      & input {
+        border: none;
+        padding: 5px;
+        border-radius: 2px;
+        text-align: center;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+.update {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  & button:active {
+    transform: scale(0.9);
+  }
+}
+.active {
+  background-color: rgb(0, 255, 0);
+}
+.wait {
+  background-color: none;
+}

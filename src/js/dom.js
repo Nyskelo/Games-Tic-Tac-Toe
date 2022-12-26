@@ -1,0 +1,10 @@
+export const playerX = document.getElementById('playerX');
+export const playerO = document.getElementById('playerO');
+export const scorePlayerX = document.getElementById('scorePlayerX');
+export const scorePlayerO = document.getElementById('scorePlayerO');
+export const start = document.getElementById('start');
+export const reset = document.getElementById('reset');
+export const newGame = document.getElementById('newGame');
+export const tds = document.getElementsByTagName('td');
+export const labels = document.getElementsByTagName('label');
+export const table = document.getElementById('table');
